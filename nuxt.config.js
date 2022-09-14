@@ -18,7 +18,11 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/both-sides.ts' },
+    { src: '~/plugins/client-only.ts', mode: 'client' },
+    { src: '~/plugins/server-only.ts', mode: 'server' }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
