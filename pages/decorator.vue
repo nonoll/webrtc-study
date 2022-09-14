@@ -21,7 +21,7 @@ export default class DecoratorPage extends Vue {
   list!: Array<string>
 
   mounted() {
-    console.log('mounted', this, this.list, new Device(), myContainer.get<Warrior>(TYPES.Warrior).fight());
+    console.log('mounted', this, this.list, new Device(), myContainer.get<Warrior>(TYPES.Warrior).fight(), this.$eventToObservable, this.$fromDOMEvent);
   }
 }
 </script>

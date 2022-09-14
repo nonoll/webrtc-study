@@ -23,7 +23,7 @@ export default defineComponent({
     const vm = getCurrentInstance()?.proxy;
 
     onMounted(() => {
-      console.log('onMounted', vm, props.list, new Device(), myContainer.get<Warrior>(TYPES.Warrior).fight());
+      console.log('onMounted', vm, props.list, new Device(), myContainer.get<Warrior>(TYPES.Warrior).fight(), vm?.$eventToObservable, vm?.$fromDOMEvent);
     })
   },
 })
